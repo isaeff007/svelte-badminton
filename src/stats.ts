@@ -1,5 +1,9 @@
 
-import {Player, GameDay, GameType} from './models';
+// import interfaces with 'type' 
+import type {Player, GameDay } from './models';
+
+// import enums without 'type'
+import { GameType } from './models';
 
 export const players: Player[] =
 

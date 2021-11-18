@@ -1,3 +1,4 @@
+
 export interface GameDay {
     date: string;
     games: Game[];
