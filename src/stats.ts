@@ -272,6 +272,26 @@ export const games: GameDay[] = [
       {type: GameType.PAIR, winner: {playerId: Pls.FW, points: 21}, looser: {playerId: Pls.FK, points: 14}},
       {type: GameType.PAIR, winner: {playerId: Pls.FK, points: 22}, looser: {playerId: Pls.FW, points: 20}},
     ]
+  },
+  {
+    date: '2021.11.07',
+    games: [
+      {type: GameType.PAIR, winner: {playerId: Pls.FW, points: 21}, looser: {playerId: Pls.FK, points: 13}},
+      {type: GameType.PAIR, winner: {playerId: Pls.FW, points: 22}, looser: {playerId: Pls.FK, points: 20}},
+      {type: GameType.PAIR, winner: {playerId: Pls.FW, points: 21}, looser: {playerId: Pls.FK, points: 18}},
+      {type: GameType.PAIR, winner: {playerId: Pls.FK, points: 21}, looser: {playerId: Pls.FW, points: 16}},
+      {type: GameType.PAIR, winner: {playerId: Pls.FW, points: 11}, looser: {playerId: Pls.FK, points: 5}},
+    ]
+  },
+  {
+    date: '2021.11.03',
+    games: [
+      {type: GameType.PAIR, winner: {playerId: Pls.FW, points: 21}, looser: {playerId: Pls.FK, points: 8}},
+      {type: GameType.PAIR, winner: {playerId: Pls.FW, points: 22}, looser: {playerId: Pls.FK, points: 19}},
+      {type: GameType.PAIR, winner: {playerId: Pls.FK, points: 21}, looser: {playerId: Pls.FW, points: 12}},
+      {type: GameType.PAIR, winner: {playerId: Pls.FW, points: 21}, looser: {playerId: Pls.FK, points: 16}},      
+      {type: GameType.PAIR, winner: {playerId: Pls.FW, points: 15}, looser: {playerId: Pls.FK, points: 13}},
+    ]
   }
 
   ]

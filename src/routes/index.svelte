@@ -44,7 +44,7 @@
 
 	.container {
 		display: flex;
-		gap: 5rem;
+		gap: 3rem;
 		justify-content: center;
 		flex-wrap: wrap;
 		margin-bottom: 3rem;
