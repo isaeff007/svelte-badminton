@@ -8,12 +8,12 @@ import { GameType } from './models';
 export const players: Player[] =
 
   [
-    {id: 'fw', name: 'FW', avatar: 'no'},
-    {id: 'fk', name: 'FK', avatar: 'no'},
-    {id: 'nk', name: 'Наташа', avatar: 'no'},
-    {id: 'ak', name: 'Саша', avatar: 'no'},
-    {id: 'ew', name: 'Эмма', avatar: 'no'},
-    {id: 'ks', name: 'Костя', avatar: 'no'}
+    {id: 'fw', name: 'FW', avatar: '/img/fw.png' },
+    {id: 'fk', name: 'FK', avatar: '/img/fw.png'},
+    {id: 'nk', name: 'Наташа', avatar: '/img/nk.png', team:'fk'},
+    {id: 'ak', name: 'Саша', avatar: '/img/ak.png', team:'fk'},
+    {id: 'ew', name: 'Эмма', avatar: '/img/ew.png', team:'fw'},
+    {id: 'ks', name: 'Костя', avatar: '/img/ks.png', team:'fw'}
   ];
 
 export const Pls = {
@@ -284,7 +284,7 @@ export const games: GameDay[] = [
     ]
   },
   {
-    date: '2021.11.03',
+    date: '2021.11.13',
     games: [
       {type: GameType.PAIR, winner: {playerId: Pls.FW, points: 21}, looser: {playerId: Pls.FK, points: 8}},
       {type: GameType.PAIR, winner: {playerId: Pls.FW, points: 22}, looser: {playerId: Pls.FK, points: 19}},
@@ -292,7 +292,15 @@ export const games: GameDay[] = [
       {type: GameType.PAIR, winner: {playerId: Pls.FW, points: 21}, looser: {playerId: Pls.FK, points: 16}},      
       {type: GameType.PAIR, winner: {playerId: Pls.FW, points: 15}, looser: {playerId: Pls.FK, points: 13}},
     ]
+  },
+  {
+    date: '2021.11.21',
+    games: [
+      {type: GameType.PAIR, winner: {playerId: Pls.FW, points: 21}, looser: {playerId: Pls.FK, points: 18}},      ,
+      {type: GameType.PAIR, winner: {playerId: Pls.FK, points: 21}, looser: {playerId: Pls.FW, points: 15}},
+      {type: GameType.PAIR, winner: {playerId: Pls.FW, points: 21}, looser: {playerId: Pls.FK, points: 14}},      
+      {type: GameType.PAIR, winner: {playerId: Pls.FK, points: 22}, looser: {playerId: Pls.FW, points: 22}},
+    ]
   }
-
   ]
 ;

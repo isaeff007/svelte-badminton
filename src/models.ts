@@ -35,6 +35,7 @@ export interface GameDay {
     id: string;
     name: string;
     avatar?: string;
+    team?: string;
   }
   
   

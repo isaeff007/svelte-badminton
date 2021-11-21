@@ -1,5 +1,10 @@
-import { games } from 'src/stats';
-import type { Game, GameDay, PlayerPoints, PlayerWins } from 'src/models';
+import { games, players } from 'src/stats';
+import type { Game, GameDay, Player, PlayerPoints, PlayerWins } from 'src/models';
+
+
+export const getPlayers = (): Player[] =>  {
+   return players;
+}
 
 function compareByDate(gameDay1: GameDay, gameDay2: GameDay): number {
 	if (gameDay1.date < gameDay2.date) {
