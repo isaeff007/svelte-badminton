@@ -1,11 +1,15 @@
 <script lang="ts">
+	import { fade } from 'svelte/transition';
 	import type { GameDay, PlayerWins } from 'src/models';
 	import { getGameDayResult } from './dataservice';
 	export let gameDay: GameDay;
 	let result: PlayerWins[] = getGameDayResult(gameDay);
+	// do not mark the winner if it was a draw
+	$: win = result[0]?.playerWins > result[1]?.playerWins;
+
 </script>
 
-<main class="game-day-card">
+<main class="game-day-card" transition:fade>
 	<header>
 		<div class="card-title">
 			<div class="game-date">{gameDay.date}</div>
@@ -13,7 +17,7 @@
 	</header>
 	<section class="result-row">
 		<img class="card-avatar" src="/img/{result[0].playerId}.png" alt="player1" />
-		<div class="result-score"><span class='win'>{result[0].playerWins} </span>:<span> {result[1].playerWins}</span></div>
+		<div class="result-score"><span class:win>{result[0].playerWins} </span>:<span> {result[1].playerWins}</span></div>
 		<img class="card-avatar" src="/img/{result[1].playerId}.png" alt="player2" />
 	</section>
 </main>

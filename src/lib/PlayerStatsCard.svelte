@@ -1,4 +1,5 @@
-<script lang="ts">
+<script lang="ts">	
+    import { fade } from 'svelte/transition';
 	import type { PlayerPoints, PlayerWins } from '../models';
 	import { getUserDaysWon, getUserPoints, getUserWins } from './dataservice';
 
@@ -9,13 +10,13 @@
 </script>
 
 <main class="player-card">
-	<header class="card-title flex">
+	<header class="card-title flex" transition:fade="{{delay: 250, duration: 700}}">
 		<img src="/img/{playerId}.png" alt="player" class="card-avatar" />
 		<div>{numberOfWins.playerWins}</div>
 	</header>
 
 	<section class="card-stats">
-		<div>По дням: {numberOfDaysWon.playerWins}</div>
+		<div>По дням: <span class="days">{numberOfDaysWon.playerWins}</span></div>
 		<div>Все мячи: {playerPoints.allPoints}</div>
 		<div>В победе: {playerPoints.winnerPoints}</div>
 		<div>В поражении: {playerPoints.looserPoints}</div>
@@ -47,6 +48,10 @@
 		flex-direction: column;
 		gap: 1rem;
 		font-size: 1rem;
+	}
+	.days {
+		font-size: larger;
+		font-weight: bolder;
 	}
 
 	.card-avatar {

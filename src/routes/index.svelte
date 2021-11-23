@@ -1,6 +1,5 @@
-<script lang="ts">
+<script lang="ts">	
 	import { getGameDays } from '$lib/dataservice';
-
 	import GameDayResult from '$lib/GameDayResult.svelte';
 	import PlayerStatsCard from '$lib/PlayerStatsCard.svelte';
 	import { Pls } from 'src/stats';
@@ -30,7 +29,7 @@
 			<PlayerStatsCard playerId={Pls.FK} />
 		</div>
 	</section>
-	<section class='container'>
+	<section class="container">
 		{#each gameDays as gameDay}
 			<GameDayResult {gameDay} />
 		{/each}

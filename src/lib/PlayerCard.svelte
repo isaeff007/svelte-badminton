@@ -1,9 +1,10 @@
 <script lang="ts">
+	import { fade } from 'svelte/transition';
 	import type { Player } from 'src/models';
 	export let player: Player;
 </script>
 
-<main class="player-card">
+<main class="player-card" in:fade="{{delay: 250, duration: 300}}">
 	<header class="card-title">
 		<img src={player.avatar} alt="player" class="card-avatar" />
 	</header>
