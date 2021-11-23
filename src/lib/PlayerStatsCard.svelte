@@ -1,6 +1,6 @@
 <script lang="ts">	
     import { fade } from 'svelte/transition';
-	import type { PlayerPoints, PlayerWins } from '../models';
+	import type { PlayerPoints, PlayerWins } from '$data/models';
 	import { getUserDaysWon, getUserPoints, getUserWins } from './dataservice';
 
 	export let playerId: string;

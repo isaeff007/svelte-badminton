@@ -1,6 +1,6 @@
 <script lang="ts">
 	import { fade } from 'svelte/transition';
-	import type { Game } from 'src/models';
+	import type { Game } from '$data/models';
 	export let game: Game;
 </script>
 

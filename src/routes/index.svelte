@@ -2,8 +2,8 @@
 	import { getGameDays } from '$lib/dataservice';
 	import GameDayResult from '$lib/GameDayResult.svelte';
 	import PlayerStatsCard from '$lib/PlayerStatsCard.svelte';
-	import { Pls } from 'src/stats';
-	import type { GameDay } from 'src/models';
+	import { Pls } from '$data/stats';
+	import type { GameDay } from '$data/models';
 
 	let gameDays = getGameDays().sort(compareByDateDesc);
 

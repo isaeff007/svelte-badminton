@@ -1,6 +1,6 @@
 <script lang="ts">
 	import { fade } from 'svelte/transition';
-	import type { Player } from 'src/models';
+	import type { Player } from '$data/models';
 	export let player: Player;
 </script>
 

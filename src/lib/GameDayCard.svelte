@@ -1,5 +1,5 @@
 <script lang="ts">
-	import type { Game, GameDay } from 'src/models';
+	import type { Game, GameDay } from '$data/models';
 	import GameCard from './GameCard.svelte';
 	export let gameDay: GameDay;
 	let result = { winnerId: '', winnerPoints: 0, looserId: '', looserPoints: 0 };

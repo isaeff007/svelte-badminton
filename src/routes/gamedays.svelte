@@ -2,7 +2,7 @@
 	import { getGameDays } from '$lib/dataservice';
 
 	import GameDayCard from '$lib/GameDayCard.svelte';
-	import type { GameDay } from 'src/models';
+	import type { GameDay } from '$data/models';
 	export let gameDays: GameDay[] = getGameDays();
 </script>
 

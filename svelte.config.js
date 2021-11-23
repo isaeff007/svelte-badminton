@@ -12,11 +12,12 @@ const config = {
 		// hydrate the <div id="svelte"> element in src/app.html
 		target: '#svelte',
 		adapter: vercel(),
-		// to fix the typescript imports
+		// to fix the typescript imports and add custom aliases
 		vite: {
 			resolve: {
 				alias: {
-					src: path.resolve('./src')
+					src: path.resolve('./src'),	
+					$data: path.resolve('./src/data')
 				}
 			}
 		}

@@ -1,5 +1,5 @@
-import { games, players } from 'src/stats';
-import type { Game, GameDay, Player, PlayerPoints, PlayerWins } from 'src/models';
+import { games, players } from '$data/stats';
+import type { Game, GameDay, Player, PlayerPoints, PlayerWins } from '$data/models';
 
 
 export const getPlayers = (): Player[] =>  {
