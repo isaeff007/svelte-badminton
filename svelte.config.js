@@ -13,6 +13,7 @@ const config = {
 		target: '#svelte',
 		adapter: vercel(),
 		// to fix the typescript imports and add custom aliases
+		// (s. tsconfig.json too)
 		vite: {
 			resolve: {
 				alias: {
