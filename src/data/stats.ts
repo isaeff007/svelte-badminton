@@ -352,6 +352,17 @@ export const games: GameDay[] = [
       {type: GameType.PAIR, winner: {playerId: Pls.FW, points: 21}, looser: {playerId: Pls.FK, points: 13}},      
       {type: GameType.PAIR, winner: {playerId: Pls.FK, points: 17}, looser: {playerId: Pls.FW, points: 15}},
     ]
+  },
+   {
+    date: '2022.01.30',
+    games: [      
+      {type: GameType.PAIR, winner: {playerId: Pls.FK, points: 21}, looser: {playerId: Pls.FW, points: 10}},      
+      {type: GameType.PAIR, winner: {playerId: Pls.FK, points: 21}, looser: {playerId: Pls.FW, points: 10}},      
+      {type: GameType.PAIR, winner: {playerId: Pls.FK, points: 21}, looser: {playerId: Pls.FW, points: 15}},
+      {type: GameType.PAIR, winner: {playerId: Pls.FK, points: 21}, looser: {playerId: Pls.FW, points: 12}},      
+      {type: GameType.PAIR, winner: {playerId: Pls.FK, points: 25}, looser: {playerId: Pls.FW, points: 23}},      
+      {type: GameType.PAIR, winner: {playerId: Pls.FK, points: 11}, looser: {playerId: Pls.FW, points: 4}},
+    ]
   }
   ]
 ;
